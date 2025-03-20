@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 10
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -42,8 +42,8 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
-  m_GIWorkflowMode: 1
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -66,9 +66,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -131,7 +128,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 751903120}
     m_Modifications:
     - target: {fileID: 961704395610020132, guid: b74471f4950aa6a4db40eb925ff5d7a9, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 5932f2760d420ff4da6d82bd54fe830d, type: 2}
     - target: {fileID: 2254790415997376378, guid: b74471f4950aa6a4db40eb925ff5d7a9, type: 3}
@@ -371,7 +368,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2367117596525286610, guid: 28db9e901eca37340be293c261268669, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 5932f2760d420ff4da6d82bd54fe830d, type: 2}
     - target: {fileID: 3500031612780326845, guid: 28db9e901eca37340be293c261268669, type: 3}
@@ -448,9 +445,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 11
   m_Type: 1
-  m_Shape: 0
   m_Color: {r: 1, g: 0.99520713, b: 0.8726415, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -500,8 +496,12 @@ Light:
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!4 &705507995
 Transform:
   m_ObjectHideFlags: 0
@@ -721,6 +721,9 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -884,8 +887,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -3}
+  m_LocalRotation: {x: 0.009629233, y: 0.67112535, z: 0.020606406, w: 0.74099493}
+  m_LocalPosition: {x: -4.654769, y: -0.37358093, z: 8.352459}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -978,7 +981,7 @@ PrefabInstance:
       value: CowboyRIO_Body
       objectReference: {fileID: 0}
     - target: {fileID: 8939904278562959538, guid: f50be78c4f7c68c4b9533f5738fa26ec, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: f8d4c42c0d72e0b40ac956265ea34e3b, type: 2}
     m_RemovedComponents: []
@@ -1203,7 +1206,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 751903120}
     m_Modifications:
     - target: {fileID: 961704395610020132, guid: b74471f4950aa6a4db40eb925ff5d7a9, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: ebf77a5d317f7e2459dd920881595f07, type: 2}
     - target: {fileID: 2254790415997376378, guid: b74471f4950aa6a4db40eb925ff5d7a9, type: 3}
@@ -1343,7 +1346,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 1253059361}
     m_Modifications:
     - target: {fileID: 615966775114875075, guid: 499db04e49ad5c54c9cacb1bcf1cfa6e, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 4d81eda6417ee7148b7dff0a36a1826f, type: 2}
     - target: {fileID: 2144573073502763935, guid: 499db04e49ad5c54c9cacb1bcf1cfa6e, type: 3}
@@ -1613,7 +1616,7 @@ PrefabInstance:
       value: 1.71
       objectReference: {fileID: 0}
     - target: {fileID: 13717912, guid: 93f8a13fb89985e4f8d0d8ecff94969a, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 069f777fdcadf3a41869c7e259c3f3fd, type: 2}
     - target: {fileID: 1122879181985962271, guid: 93f8a13fb89985e4f8d0d8ecff94969a, type: 3}
@@ -1722,7 +1725,7 @@ MonoBehaviour:
   Myrigidbody: {fileID: 1776672181}
 --- !u!95 &1776672188
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1736,6 +1739,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 1
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -1755,7 +1759,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8276041231565457240, guid: c900b3ddeceeb0548ae1ec969d99a97f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 4d81eda6417ee7148b7dff0a36a1826f, type: 2}
     - target: {fileID: 1523301488215980185, guid: c900b3ddeceeb0548ae1ec969d99a97f, type: 3}

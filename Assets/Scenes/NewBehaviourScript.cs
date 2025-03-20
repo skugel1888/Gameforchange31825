@@ -28,23 +28,23 @@ public class NewBehaviourScript : MonoBehaviour
             {
          
 
-             Myrigidbody.velocity = Vector3.up *5;
+             Myrigidbody.linearVelocity = Vector3.up *5;
             }
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            Myrigidbody.velocity = Vector3.left*3;
+            Myrigidbody.linearVelocity = Vector3.left*3;
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            Myrigidbody.velocity = Vector3.right * 3;
+            Myrigidbody.linearVelocity = Vector3.right * 3;
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            Myrigidbody.velocity = Vector3.back * 3;
+            Myrigidbody.linearVelocity = Vector3.back * 3;
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            Myrigidbody.velocity = Vector3.forward * 3;
+            Myrigidbody.linearVelocity = Vector3.forward * 3;
         }
     
 
